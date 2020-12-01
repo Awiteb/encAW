@@ -11,7 +11,7 @@ class Encaw:
         for char in self.val:
             indx = self.val.index(char)
             if indx in indexL:
-                num = ord(char) - ord(self.val[indexL[-1]])
+                num = ord(char) - ord(self.val[indexL.pop()])
             else:
                 if indx == 0:
                     num = ord(char)
